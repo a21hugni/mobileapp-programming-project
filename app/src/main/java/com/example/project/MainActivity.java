@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
 
     private final String JSON_URL = "https://mobprog.webug.se/json-api?login=a21hugni";
     private RecyclerView recyclerView;
-    private List<Verktyg> mountainsList;
+    private List<Verktyg> verktygList;
     private MyAdapter adapter;
 
     @Override
@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        new JsonTask(this).execute(JSON_URL);
+
+        recyclerView = findViewById(R.id.recycler_view);
+        verktygList = new ArrayList<Verktyg>();
+        adapter = new MyAdapter(verktygList);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override
