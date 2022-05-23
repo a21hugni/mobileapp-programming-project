@@ -8,6 +8,14 @@ public class Verktyg {
     private String company;
     private int size;
 
+    public Verktyg(String id, String name, String location, String company, int size) {
+        this.id = id;
+        this.name = name;
+        this.location = location;
+        this.company = company;
+        this.size = size;
+    }
+
     public String getId() {
         return id;
     }
@@ -45,14 +53,6 @@ public class Verktyg {
     }
 
     public void setSize(int size) {
-        this.size = size;
-    }
-
-    public Verktyg(String id, String name, String location, String company, int size) {
-        this.id = id;
-        this.name = name;
-        this.location = location;
-        this.company = company;
         this.size = size;
     }
 
