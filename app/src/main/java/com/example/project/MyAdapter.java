@@ -1,4 +1,31 @@
 package com.example.project;
 
-public class MyAdapter {
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
+    private List<Verktyg> verktyg;
+    public MyAdapter(List<Verktyg> verktyg) {
+        this.verktyg = verktyg;
+    }
+
+    @NonNull
+    @Override
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return null;
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return 0;
+    }
 }
