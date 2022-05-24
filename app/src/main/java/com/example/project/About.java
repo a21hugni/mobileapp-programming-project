@@ -3,21 +3,26 @@ package com.example.project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Button;
 
 public class About extends AppCompatActivity {
-
-    private WebView webview;
-
-
-    //public void showInterWebPage() {
-        //webview.loadUrl("file://android_assets/index.html");
-    //}
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
+        button = findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 }
