@@ -3,7 +3,7 @@
 
 **Skriv din rapport här!**
 
-Jag började med att skapa recyclerview i activity_main.xml och skapade sedan layouten för denna recycler i item_verktyg.xml. Jag deklarerade alla variabler i MainActivty och initerade dem sedan. Jag satte även en intent på den knapp som ligger på startsidan för att användare ska komma till about-sidan. Jag skapade klassen för alla verktyg och lade till getters och setters för varje typ av data jag ville hämta från min egen Json-data. Jag skapade MyViewHolder.java och hittade textview för varje "item" med hjälp av findviewbyid. Jag skapde en adapter som använder setText för att skriva ut datan. Jag skapade en activity för min about-sida med tillhörande xml-fil där det ligger en textview.
+Jag började med att skapa recyclerview i activity_main.xml och skapade sedan layouten för denna recycler i item_verktyg.xml. Jag deklarerade alla variabler i MainActivty och initerade dem sedan. Jag satte även en intent på den knapp som ligger på startsidan för att användare ska komma till about-sidan. Jag skapade klassen för alla verktyg och lade till getters och setters för varje typ av data jag ville hämta från min egen Json-data. Jag skapade MyViewHolder.java och hittade textview för varje "item" med hjälp av findviewbyid. Jag skapde en adapter som använder setText för att skriva ut datan. Jag skapade en activity för min about-sida med tillhörande xml-fil där det ligger en textview. Där ligger även en knapp som tar användaren tillbaka till föregående sida.
 
 ```
         recyclerView = findViewById(R.id.recycler_view);
